@@ -5,7 +5,7 @@ function init() {
     inquirer
      .prompt({
         name: "action",
-        type: "rawlist",
+        type: "list",
         message: "What would you like to do?",
         choices: [
           "Add a record",
@@ -28,14 +28,13 @@ function init() {
                 break;
             }
           })
-        }
-
+}
 
 function viewRecords() {
     inquirer
     .prompt({
       name: "action",
-      type: "rawlist",
+      type: "list",
       message: "Which records do you want to view?",
       choices: [
         "Departments",
@@ -69,7 +68,7 @@ function addRecord() {
     inquirer
     .prompt({
       name: "action",
-      type: "rawlist",
+      type: "list",
       message: "What kind of record do you want to add?",
       choices: [
         "Departments",

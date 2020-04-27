@@ -1,3 +1,3 @@
-const questions = require("./scripts/questions");
+const questions = require('./scripts/questions');
 
 questions.init();
